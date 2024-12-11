@@ -42,6 +42,7 @@ def main():
     menu = st.sidebar.selectbox("Pilih Menu", ["Anggota - Group 6", "Pengolahan Citra Menggunakan Python"])
 
     if menu == "Anggota - Group 6":
+        st.image("President_University_Logo.png", use_container_width:True)
         st.title("Anggota - Group 6")
         st.write("Berikut adalah anggota dari Group 6:")
 
@@ -63,6 +64,7 @@ def main():
         # Tambahkan anggota lainnya sesuai kebutuhan
 
     elif menu == "Pengolahan Citra Menggunakan Python":
+        st.image("logo_photo_editing.png", use_column_width=True)
         st.title("Pengolahan Citra Menggunakan Python")
         st.write("Upload an image to edit its brightness, rotate, or zoom.")
 
