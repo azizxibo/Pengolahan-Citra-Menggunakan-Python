@@ -49,17 +49,17 @@ def main():
         # Anggota 1
         if st.button("Lihat Foto Anggota 1"):
             st.subheader("Anggota 1")
-            st.image("foto profile aziz.jpg", caption="Aziz Ramdhani")
+            st.image("foto profile aziz.jpg",width=150, caption="Aziz Ramdhani")
 
         # Anggota 2
         if st.button("Lihat Foto Anggota 2"):
             st.subheader("Anggota 2")
-            st.image("foto profile.jpg", caption="Antoni Diyan Anugrah")
+            st.image("foto profile.jpg",width=150, caption="Antoni Diyan Anugrah")
 
         # Anggota 3
         if st.button("Lihat Foto Anggota 3"):
             st.subheader("Anggota 3")
-            st.image("foto profile agiel.jpeg", caption="Agiel Prastica Adhi")
+            st.image("foto profile agiel.jpeg",width=150, caption="Agiel Prastica Adhi")
 
         # Tambahkan anggota lainnya sesuai kebutuhan
 
