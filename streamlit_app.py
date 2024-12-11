@@ -46,16 +46,19 @@ def main():
         st.write("Berikut adalah anggota dari Group 6:")
 
         # Anggota 1
-        st.subheader("Anggota 1")
-        st.image("foto aziz 3-4.jpg", caption="Aziz Ramdhani")
+        if st.button("Lihat Foto Anggota 1"):
+            st.subheader("Anggota 1")
+            st.image("foto profile aziz.jpg", caption="Aziz Ramdhani")
 
         # Anggota 2
-        st.subheader("Anggota 2")
-        st.image("foto profile.jpg", caption="Antoni Diyan Anugrah")
+        if st.button("Lihat Foto Anggota 2"):
+            st.subheader("Anggota 2")
+            st.image("foto profile.jpg", caption="Antoni Diyan Anugrah")
 
         # Anggota 3
-        st.subheader("Anggota 3")
-        st.image("foto agiel 3-4.jpeg", caption="Agiel Prastica Adhi")
+        if st.button("Lihat Foto Anggota 3"):
+            st.subheader("Anggota 3")
+            st.image("foto profile agiel.jpeg", caption="Agiel Prastica Adhi")
 
         # Tambahkan anggota lainnya sesuai kebutuhan
 
@@ -96,7 +99,7 @@ def main():
             st.download_button(
                 label=f"Download Image as {format_type}",
                 data=img_for_download,
-                file_name=f"edited_image_by_app_group6.{format_type.lower()}",
+                file_name=f"edited_image.{format_type.lower()}",
                 mime=f"image/{format_type.lower()}" if format_type != "PDF" else "application/pdf"
             )
 
