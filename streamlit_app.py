@@ -47,7 +47,7 @@ def main():
 
         # Anggota 1
         st.subheader("Anggota 1")
-        st.image("foto profile aziz.jpg", caption="Aziz Ramdhani")
+        st.image("foto aziz 3-4.jpg", caption="Aziz Ramdhani")
 
         # Anggota 2
         st.subheader("Anggota 2")
@@ -55,7 +55,7 @@ def main():
 
         # Anggota 3
         st.subheader("Anggota 3")
-        st.image("foto profile agiel.jpeg", caption="Agiel Prastica Adhi")
+        st.image("foto agiel 3-4.jpeg", caption="Agiel Prastica Adhi")
 
         # Tambahkan anggota lainnya sesuai kebutuhan
 
