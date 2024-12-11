@@ -47,18 +47,18 @@ def main():
         st.write("Berikut adalah anggota dari Group 6:")
 
         # Anggota 1
-        if st.button("Lihat Foto Anggota 1"):
-            st.subheader("Anggota 1")
+        if st.button("Aziz Ramdhani - image"):
+            st.subheader("Sitampan dan Pemberani")
             st.image("foto profile aziz.jpg",width=150, caption="Aziz Ramdhani")
 
         # Anggota 2
-        if st.button("Lihat Foto Anggota 2"):
-            st.subheader("Anggota 2")
+        if st.button("Antoni Diyan Anugrah- image"):
+            st.subheader("Sikalem dan Pintar menabung")
             st.image("foto profile.jpg",width=150, caption="Antoni Diyan Anugrah")
 
         # Anggota 3
-        if st.button("Lihat Foto Anggota 3"):
-            st.subheader("Anggota 3")
+        if st.button("Agiel Prastica Adhi- image"):
+            st.subheader("Gagah dan Pelari")
             st.image("foto profile agiel.jpeg",width=150, caption="Agiel Prastica Adhi")
 
         # Tambahkan anggota lainnya sesuai kebutuhan
