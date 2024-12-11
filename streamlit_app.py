@@ -64,7 +64,7 @@ def main():
         # Tambahkan anggota lainnya sesuai kebutuhan
 
     elif menu == "Pengolahan Citra Menggunakan Python":
-        st.image("logo_photo_editing.png", use_column_width=True)
+        st.image("President_University_Logo (2).png",width=150)
         st.title("Pengolahan Citra Menggunakan Python")
         st.write("Upload an image to edit its brightness, rotate, or zoom.")
 
