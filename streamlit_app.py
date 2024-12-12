@@ -39,12 +39,14 @@ def convert_image_to_bytes(img, format_type):
 # Pilihan awal untuk menampilkan menu
 def main():
     st.sidebar.title("Menu")
-    col1, col2 = st.columns(2) # Tombol untuk navigasi menu
 
-    with col1:
-        anggota_menu = st.button("Anggota - Group 6")
-    with col2:
-        pengolahan_menu = st.button("Pengolahan Citra")
+    # Membuat kolom di sidebar di bawah tulisan Menu
+    with st.sidebar:
+        col1, col2 = st.columns(2)
+        with col1:
+            anggota_menu = st.button("Anggota")
+        with col2:
+            pengolahan_menu = st.button("Pengolahan Citra")
 
     if anggota_menu:
         st.image("President_University_Logo (2).png", width=150)
