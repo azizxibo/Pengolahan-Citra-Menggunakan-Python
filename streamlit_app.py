@@ -39,9 +39,7 @@ def convert_image_to_bytes(img, format_type):
 # Pilihan awal untuk menampilkan menu
 def main():
     st.sidebar.title("Menu")
-
-    # Tombol untuk navigasi menu
-    col1, col2 = st.columns(2)
+    col1, col2 = st.columns(2) # Tombol untuk navigasi menu
 
     with col1:
         anggota_menu = st.button("Anggota - Group 6")
