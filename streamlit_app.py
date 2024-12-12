@@ -39,7 +39,7 @@ def convert_image_to_bytes(img, format_type):
 # Pilihan awal untuk menampilkan menu
 def main():
     st.sidebar.title("Menu")
-    menu = st.sidebar.selectbox("Pilih Menu", ["Anggota - Group 6", "Pengolahan Citra Menggunakan Python"])
+    menu = st.sidebar.selectbox("Pilih Menu", ["Pengolahan Citra Menggunakan Python" ,"Anggota - Group 6"])
 
     if menu == "Anggota - Group 6":
         st.image("President_University_Logo (2).png",width=150)
