@@ -38,15 +38,15 @@ def convert_image_to_bytes(img, format_type):
 
 # Pilihan awal untuk menampilkan menu
 def main():
-    st.sidebar.title("Menu")
+    st.sidebar.title("Menu ⚙️")
 
     # Membuat kolom di sidebar di bawah tulisan Menu
     with st.sidebar:
         col1, col2 = st.columns(2)
         with col1:
-            anggota_menu = st.button("Anggota")
+            anggota_menu = st.button("My Team 📟")
         with col2:
-            pengolahan_menu = st.button("Pengolahan Citra")
+            pengolahan_menu = st.button("Pengolahan Citra 📷")
 
     # Tampilkan menu Pengolahan Citra secara default
     if not anggota_menu:
@@ -87,7 +87,7 @@ def main():
             st.download_button(
                 label=f"Download Image as {format_type}",
                 data=img_for_download,
-                file_name=f"edited_image.{format_type.lower()}",
+                file_name=f"edited_image by groupsix.{format_type.lower()}",
                 mime=f"image/{format_type.lower()}" if format_type != "PDF" else "application/pdf"
             )
 
