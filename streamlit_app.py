@@ -41,16 +41,16 @@ def main():
     if 'page' not in st.session_state:
         st.session_state.page = "pengolahan_citra"
 
-    st.sidebar.title("Menu")
+    st.sidebar.title("Menu ⚙️")
 
     # Membuat kolom di sidebar di bawah tulisan Menu
     with st.sidebar:
         col1, col2 = st.columns(2)
         with col1:
-            if st.button("Anggota"):
+            if st.button("My Team 📟"):
                 st.session_state.page = "anggota"
         with col2:
-            if st.button("Pengolahan Citra"):
+            if st.button("Pengolahan Citra 📷"):
                 st.session_state.page = "pengolahan_citra"
 
     if st.session_state.page == "pengolahan_citra":
