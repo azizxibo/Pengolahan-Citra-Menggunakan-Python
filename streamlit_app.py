@@ -43,8 +43,7 @@ if st.sidebar.button("Anggota - Group 6"):
         menu = "Anggota - Group 6"
 elif st.sidebar.button("Pengolahan Citra Menggunakan Python"):
         menu = "Pengolahan Citra Menggunakan Python"
-else:
-        menu = "Anggota - Group 6"
+        
 
 if menu == "Anggota - Group 6":
         st.image("President_University_Logo (2).png",width=150)
