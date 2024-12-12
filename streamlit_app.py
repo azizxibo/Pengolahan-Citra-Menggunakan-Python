@@ -39,13 +39,9 @@ def convert_image_to_bytes(img, format_type):
 # Pilihan awal untuk menampilkan menu
 def main():
     st.sidebar.title("Menu")
-if st.sidebar.button("Anggota - Group 6"):
-        menu = "Anggota - Group 6"
-elif st.sidebar.button("Pengolahan Citra Menggunakan Python"):
-        menu = "Pengolahan Citra Menggunakan Python"
-        
+    menu = st.sidebar.selectbox("Pilih Menu", ["Anggota - Group 6", "Pengolahan Citra Menggunakan Python"])
 
-if menu == "Anggota - Group 6":
+    if menu == "Anggota - Group 6":
         st.image("President_University_Logo (2).png",width=150)
         st.title("Anggota - Group 6")
         st.write("Berikut adalah anggota dari Group 6:")
@@ -62,12 +58,12 @@ if menu == "Anggota - Group 6":
 
         # Anggota 3
         if st.button("Agiel Prastica Adhi- image"):
-            st.subheader("Gagah dan Pelari")
+            st.subheader("SiGagah dan Pelari")
             st.image("foto profile agiel.jpeg",width=150, caption="Agiel Prastica Adhi")
 
         # Tambahkan anggota lainnya sesuai kebutuhan
 
-elif menu == "Pengolahan Citra Menggunakan Python":
+    elif menu == "Pengolahan Citra Menggunakan Python":
         st.image("President_University_Logo (2).png",width=150)
         st.title("Pengolahan Citra Menggunakan Python")
         st.write("Upload an image to edit its brightness, rotate, or zoom.")
