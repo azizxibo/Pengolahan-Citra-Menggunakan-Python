@@ -48,29 +48,8 @@ def main():
         with col2:
             pengolahan_menu = st.button("Pengolahan Citra")
 
-    if anggota_menu:
-        st.image("President_University_Logo (2).png", width=150)
-        st.title("Anggota - Group 6")
-        st.write("Berikut adalah anggota dari Group 6:")
-
-        # Anggota 1
-        if st.button("Aziz Ramdhani - image"):
-            st.subheader("Sitampan dan Pemberani")
-            st.image("foto profile aziz.jpg", width=150, caption="Aziz Ramdhani")
-
-        # Anggota 2
-        if st.button("Antoni Diyan Anugrah - image"):
-            st.subheader("Sikalem dan Pintar menabung")
-            st.image("foto profile antoni.jpeg", width=150, caption="Antoni Diyan Anugrah")
-
-        # Anggota 3
-        if st.button("Agiel Prastica Adhi - image"):
-            st.subheader("SiGagah dan Pelari")
-            st.image("foto profile agiel.jpeg", width=150, caption="Agiel Prastica Adhi")
-
-        # Tambahkan anggota lainnya sesuai kebutuhan
-
-    elif pengolahan_menu:
+    # Tampilkan menu Pengolahan Citra secara default
+    if not anggota_menu:
         st.image("President_University_Logo (2).png", width=150)
         st.title("Pengolahan Citra Menggunakan Python")
         st.write("Upload an image to edit its brightness, rotate, or zoom.")
@@ -111,6 +90,28 @@ def main():
                 file_name=f"edited_image.{format_type.lower()}",
                 mime=f"image/{format_type.lower()}" if format_type != "PDF" else "application/pdf"
             )
+
+    if anggota_menu:
+        st.image("President_University_Logo (2).png", width=150)
+        st.title("Anggota - Group 6")
+        st.write("Berikut adalah anggota dari Group 6:")
+
+        # Anggota 1
+        if st.button("Aziz Ramdhani - image"):
+            st.subheader("Sitampan dan Pemberani")
+            st.image("foto profile aziz.jpg", width=150, caption="Aziz Ramdhani")
+
+        # Anggota 2
+        if st.button("Antoni Diyan Anugrah - image"):
+            st.subheader("Sikalem dan Pintar menabung")
+            st.image("foto profile antoni.jpeg", width=150, caption="Antoni Diyan Anugrah")
+
+        # Anggota 3
+        if st.button("Agiel Prastica Adhi - image"):
+            st.subheader("SiGagah dan Pelari")
+            st.image("foto profile agiel.jpeg", width=150, caption="Agiel Prastica Adhi")
+
+        # Tambahkan anggota lainnya sesuai kebutuhan
 
 if __name__ == "__main__":
     main()
