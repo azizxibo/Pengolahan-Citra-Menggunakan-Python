@@ -39,32 +39,39 @@ def convert_image_to_bytes(img, format_type):
 # Pilihan awal untuk menampilkan menu
 def main():
     st.sidebar.title("Menu")
-    menu = st.sidebar.selectbox("Pilih Menu", ["Pengolahan Citra Menggunakan Python" ,"Anggota - Group 6"])
 
-    if menu == "Anggota - Group 6":
-        st.image("President_University_Logo (2).png",width=150)
+    # Tombol untuk navigasi menu
+    col1, col2 = st.columns(2)
+
+    with col1:
+        anggota_menu = st.button("Anggota - Group 6")
+    with col2:
+        pengolahan_menu = st.button("Pengolahan Citra")
+
+    if anggota_menu:
+        st.image("President_University_Logo (2).png", width=150)
         st.title("Anggota - Group 6")
         st.write("Berikut adalah anggota dari Group 6:")
 
         # Anggota 1
         if st.button("Aziz Ramdhani - image"):
             st.subheader("Sitampan dan Pemberani")
-            st.image("foto profile aziz.jpg",width=150, caption="Aziz Ramdhani")
+            st.image("foto profile aziz.jpg", width=150, caption="Aziz Ramdhani")
 
         # Anggota 2
-        if st.button("Antoni Diyan Anugrah- image"):
+        if st.button("Antoni Diyan Anugrah - image"):
             st.subheader("Sikalem dan Pintar menabung")
-            st.image("foto profile antoni.jpeg",width=150, caption="Antoni Diyan Anugrah")
+            st.image("foto profile antoni.jpeg", width=150, caption="Antoni Diyan Anugrah")
 
         # Anggota 3
-        if st.button("Agiel Prastica Adhi- image"):
+        if st.button("Agiel Prastica Adhi - image"):
             st.subheader("SiGagah dan Pelari")
-            st.image("foto profile agiel.jpeg",width=150, caption="Agiel Prastica Adhi")
+            st.image("foto profile agiel.jpeg", width=150, caption="Agiel Prastica Adhi")
 
         # Tambahkan anggota lainnya sesuai kebutuhan
 
-    elif menu == "Pengolahan Citra Menggunakan Python":
-        st.image("President_University_Logo (2).png",width=150)
+    elif pengolahan_menu:
+        st.image("President_University_Logo (2).png", width=150)
         st.title("Pengolahan Citra Menggunakan Python")
         st.write("Upload an image to edit its brightness, rotate, or zoom.")
 
