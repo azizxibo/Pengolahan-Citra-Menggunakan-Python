@@ -38,18 +38,22 @@ def convert_image_to_bytes(img, format_type):
 
 # Pilihan awal untuk menampilkan menu
 def main():
-    st.sidebar.title("Menu ⚙️")
+    if 'page' not in st.session_state:
+        st.session_state.page = "pengolahan_citra"
+
+    st.sidebar.title("Menu")
 
     # Membuat kolom di sidebar di bawah tulisan Menu
     with st.sidebar:
         col1, col2 = st.columns(2)
         with col1:
-            anggota_menu = st.button("My Team 📟")
+            if st.button("Anggota"):
+                st.session_state.page = "anggota"
         with col2:
-            pengolahan_menu = st.button("Pengolahan Citra 📷")
+            if st.button("Pengolahan Citra"):
+                st.session_state.page = "pengolahan_citra"
 
-    # Tampilkan menu Pengolahan Citra secara default
-    if not anggota_menu:
+    if st.session_state.page == "pengolahan_citra":
         st.image("President_University_Logo (2).png", width=150)
         st.title("Pengolahan Citra Menggunakan Python")
         st.write("Upload an image to edit its brightness, rotate, or zoom.")
@@ -87,11 +91,11 @@ def main():
             st.download_button(
                 label=f"Download Image as {format_type}",
                 data=img_for_download,
-                file_name=f"edited_image by groupsix.{format_type.lower()}",
+                file_name=f"edited_image.{format_type.lower()}",
                 mime=f"image/{format_type.lower()}" if format_type != "PDF" else "application/pdf"
             )
 
-    if anggota_menu:
+    elif st.session_state.page == "anggota":
         st.image("President_University_Logo (2).png", width=150)
         st.title("Anggota - Group 6")
         st.write("Berikut adalah anggota dari Group 6:")
@@ -110,8 +114,6 @@ def main():
         if st.button("Agiel Prastica Adhi - image"):
             st.subheader("SiGagah dan Pelari")
             st.image("foto profile agiel.jpeg", width=150, caption="Agiel Prastica Adhi")
-
-        # Tambahkan anggota lainnya sesuai kebutuhan
 
 if __name__ == "__main__":
     main()
