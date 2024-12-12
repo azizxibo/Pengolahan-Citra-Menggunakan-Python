@@ -54,7 +54,7 @@ def main():
         # Anggota 2
         if st.button("Antoni Diyan Anugrah- image"):
             st.subheader("Sikalem dan Pintar menabung")
-            st.image("foto profile.jpg",width=150, caption="Antoni Diyan Anugrah")
+            st.image("foto profile antoni.jpeg",width=150, caption="Antoni Diyan Anugrah")
 
         # Anggota 3
         if st.button("Agiel Prastica Adhi- image"):
